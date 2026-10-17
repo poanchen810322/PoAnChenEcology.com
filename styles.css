@@ -215,38 +215,11 @@ body.lightbox-open { overflow:hidden; }
   .lightbox-image { max-width:none; width:1200px; height:auto; }
 }
 /* Research profile separators */
-.profile-links {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-  flex-wrap:wrap;
-  color:var(--green);
-  font-weight:750;
-}
-
-.profile-links > *::before,
-.profile-links > *::after {
-  content:none !important;
-  display:none !important;
-}
-
-.profile-separator {
-  display:inline;
-  color:#a7aea9;
-  font-weight:400;
-}
-
-.profile-links a {
-  color:inherit;
-  text-decoration:none;
-  border-bottom:1px solid currentColor;
-}
-
-.profile-links a:hover,
-.profile-links a:focus-visible {
-  color:var(--gold);
-}
+.profile-links { display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap:wrap; color:var(--green); font-weight:750; }
+.profile-links > *::before, .profile-links > *::after { content:none !important; display:none !important; }
+.profile-separator { display:inline; color:#a7aea9; font-weight:400; }
+.profile-links a { color:inherit; text-decoration:none; border-bottom:1px solid currentColor; }
+.profile-links a:hover, .profile-links a:focus-visible { color:var(--gold); }
 
 .contact-links {
   color:#fff;

@@ -122,8 +122,27 @@ p { margin:0 0 1.35em; }
 .small-actions { justify-content:center; margin:28px 0 42px; gap:10px; }
 .small-actions .button { min-width:130px; padding:9px 17px; font-size:.72rem; }
 .profiles-title { font-size:1rem; color:var(--gold); text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px; }
-.profile-links span { position:relative; }
-.profile-links span:not(:last-child)::after { content:"·"; position:absolute; right:-16px; color:#a7aea9; }
+.profile-links > * {
+  position:relative;
+}
+
+.profile-links > *:not(:last-child)::after {
+  content:"·";
+  position:absolute;
+  right:-16px;
+  color:#a7aea9;
+}
+
+.profile-links a {
+  color:inherit;
+  text-decoration:none;
+  border-bottom:1px solid currentColor;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  color:var(--gold);
+}
 .contact-section { background:var(--green-deep); color:#eaf0eb; }
 .contact-section h2 { color:#fff; }
 .contact-section .lead { color:#e3ebe5; }
@@ -188,7 +207,9 @@ p { margin:0 0 1.35em; }
   .projects { gap:80px; }
   .diagram { border-radius:10px; margin-inline:-5px; }
   .earlier-research { margin-top:90px; }
-  .profile-links span::after { display:none; }
+  .profile-links > *::after {
+  display:none;
+}
 @media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto}.js .reveal{transition:none;opacity:1;transform:none}.button{transition:none} }
 
 /* Diagram enlargement */

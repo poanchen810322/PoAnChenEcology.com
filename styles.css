@@ -179,8 +179,13 @@ p { margin:0 0 1.35em; }
   .hero-grid { gap:34px; }
   .hero-actions { gap:8px; }
   .button { min-width:0; flex:1 1 46%; }
-  .species-card { grid-template-columns:1fr; }
-  .species-card img { aspect-ratio:16/10; }
+  .species-card { display:block; }
+  .species-card img { width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; }
+  .species-card figcaption { position:static; display:flex; flex-direction:column; gap:2px; padding:18px 20px 20px; background:#fff; }
+  .species-card figcaption a { display:inline-block; }
+  .species-card figcaption strong { color:var(--ink); }
+  .species-card figcaption em { color:#4d5d54; }
+  .species-card figcaption small { color:#777f79; }
   .project-head { grid-template-columns:1fr; gap:12px; }
   .project-number { width:40px;height:40px; }
   .projects { gap:80px; }

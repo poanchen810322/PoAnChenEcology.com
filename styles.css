@@ -134,7 +134,7 @@ p { margin:0 0 1.35em; }
 .contact-card .contact-email a { color:#c4cec6; text-decoration:none; border-bottom:1px solid rgba(196,206,198,.55); }
 .contact-card .contact-email a:hover, .contact-card .contact-email a:focus-visible { color:#fff; border-bottom-color:#fff; }
 .contact-links { color:#fff; }
-.copyright { margin:55px 0 0; font-size:.78rem; color:#aab9ae; }
+.copyright { width:100%; margin:55px 0 0; text-align:center; font-size:.78rem; color:#aab9ae; }
 .reveal { opacity:1; transform:none; }
 .js .reveal { opacity:0; transform:translateY(18px); transition:opacity .55s ease, transform .55s ease; }
 .js .reveal.visible { opacity:1; transform:none; }
@@ -218,6 +218,9 @@ body.lightbox-open { overflow:hidden; }
   .lightbox { padding:54px 8px 12px; align-items:center; }
   .lightbox-inner { width:100%; height:auto; max-height:90vh; overflow:auto; }
   .lightbox-image { max-width:none; width:1200px; height:auto; }
+  .hero-action-group { display:flex; width:100%; }
+  .hero-action-group .hero-actions { width:100%; }
+  .hero-profile-links { width:100%; }
 }
 /* Research profile separators */
 .profile-links { display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap:wrap; color:var(--green); font-weight:750; }
@@ -225,7 +228,8 @@ body.lightbox-open { overflow:hidden; }
 .profile-separator { display:inline; color:#a7aea9; font-weight:400; }
 .profile-links a { color:inherit; text-decoration:none; border-bottom:1px solid currentColor; }
 .profile-links a:hover, .profile-links a:focus-visible { color:var(--gold); }
-.hero-profile-links { justify-content:flex-start; margin-top:18px; font-size:.92rem; }
+.hero-action-group { display:inline-flex; flex-direction:column; }
+.hero-profile-links { justify-content:center; margin-top:18px; font-size:.92rem; }
 
 .contact-links {
   color:#fff;

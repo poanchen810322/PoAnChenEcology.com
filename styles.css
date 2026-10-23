@@ -261,6 +261,6 @@ body.lightbox-open { overflow:hidden; }
   .earlier-research h2 { font-size:clamp(2.15rem, 2.8vw, 2.8rem); }
 }
 
-.career-status { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:-8px 0 24px; color:var(--green); font-size:.95rem; }
-.career-status strong { color:var(--gold); font-weight:750; }
-.career-separator { color:#a7aea9; }
+.career-status { display:flex; flex-direction:column; align-items:flex-start; gap:8px; margin:-6px 0 24px; }
+.career-date { color:var(--green); font-size:.95rem; }
+.postdoc-badge { display:inline-block; padding:7px 12px; border:1px solid var(--gold); border-radius:999px; background:rgba(180,125,53,.10); color:var(--gold); font-size:.88rem; font-weight:800; letter-spacing:.01em; }

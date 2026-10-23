@@ -35,7 +35,7 @@ a { color: inherit; }
 .section-surface.white { background:#fff; }
 .research-bg { background:#f6f4ee; }
 .teaching-bg { background:#f4f1e9; }
-.section-pad { padding:clamp(78px,8vw,120px) 0; }
+.section-pad { padding:clamp(64px,6vw,96px) 0; }
 h1,h2,h3,h4 { color:var(--ink); margin-top:0; }
 h1,h2 { font-family: Georgia, "Times New Roman", serif; line-height:1.08; font-weight:700; letter-spacing:-.02em; }
 h1 { font-size:clamp(3.5rem,6vw,5.8rem); margin-bottom:18px; }
@@ -88,9 +88,18 @@ p { margin:0 0 1.35em; }
 .diagram img { width:100%; height:auto; }
 .earlier-research { margin-top:130px; padding:clamp(48px,6vw,78px); background:var(--warm-2); border-radius:var(--radius); }
 .eyebrow { color:var(--gold); text-transform:uppercase; font-weight:800; letter-spacing:.04em; font-size:.88rem; margin-bottom:18px; }
-.earlier-research h2 { font-size:clamp(2.3rem,4vw,3.5rem); }
+.earlier-research h2 { font-size:clamp(2rem,3vw,2.8rem); }
 .prose.wide { max-width:none; }
 .thesis { border-left:4px solid var(--gold); padding:2px 0 2px 20px; margin:30px 0 48px; }
 .thesis strong { display:block; color:var(--gold); margin-bottom:5px; }
 .thesis em { color:#606962; }
 .thesis a { margin-left:.2rem; }
+.taiwan-photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:42px; align-items:start; }
+.taiwan-photo-grid .taiwan-figure { margin:0; }
+.taiwan-photo-grid .taiwan-figure.sparrows { max-width:none; margin:0; }
+.taiwan-photo-grid .taiwan-figure img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:10px; }
+.taiwan-photo-grid .taiwan-figure figcaption { text-align:center; font-style:italic; color:#646b66; font-size:.82rem; line-height:1.45; margin-top:10px; }
+
+@media (max-width:600px) {
+  .taiwan-photo-grid { grid-template-columns:1fr; gap:30px; }
+}

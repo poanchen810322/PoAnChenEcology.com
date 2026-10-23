@@ -260,3 +260,7 @@ body.lightbox-open { overflow:hidden; }
 @media (min-width: 901px) {
   .earlier-research h2 { font-size:clamp(2.15rem, 2.8vw, 2.8rem); }
 }
+
+.career-status { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:-8px 0 24px; color:var(--green); font-size:.95rem; }
+.career-status strong { color:var(--gold); font-weight:750; }
+.career-separator { color:#a7aea9; }

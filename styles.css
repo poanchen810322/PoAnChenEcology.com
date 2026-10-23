@@ -248,3 +248,10 @@ body.lightbox-open { overflow:hidden; }
   .section-pad { padding-top:72px; padding-bottom:72px; }
   .compact-section .section-pad { padding-top:72px; padding-bottom:72px; }
 }
+
+/* Tighter spacing inside Research on desktop */
+@media (min-width: 901px) {
+  .study-system { margin-bottom:80px; }
+  .projects { gap:80px; }
+  .earlier-research { margin-top:90px; }
+}

@@ -242,3 +242,8 @@ body.lightbox-open { overflow:hidden; }
   .taiwan-photo-grid .taiwan-figure.sparrows { margin:0; max-width:none; }
   .taiwan-photo-grid .taiwan-figure img { width:100%; aspect-ratio:4/3; max-height:none; object-fit:cover; }
 }
+
+/* Slightly tighter section spacing on desktop */
+@media (min-width: 901px) {
+  .section-pad { padding-top:clamp(70px,7vw,105px); padding-bottom:clamp(70px,7vw,105px); }
+}

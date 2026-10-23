@@ -234,3 +234,11 @@ body.lightbox-open { overflow:hidden; }
 .contact-links {
   color:#fff;
 }
+
+/* Taiwan photos side by side on desktop only */
+@media (min-width: 901px) {
+  .taiwan-photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:42px; align-items:start; }
+  .taiwan-photo-grid .taiwan-figure,
+  .taiwan-photo-grid .taiwan-figure.sparrows { margin:0; max-width:none; }
+  .taiwan-photo-grid .taiwan-figure img { width:100%; aspect-ratio:4/3; max-height:none; object-fit:cover; }
+}

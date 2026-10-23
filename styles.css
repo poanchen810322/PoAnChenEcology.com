@@ -263,8 +263,8 @@ body.lightbox-open { overflow:hidden; }
 
 .career-banner { background:var(--green-deep); color:#fff; }
 .career-banner-inner { display:flex; justify-content:center; align-items:center; gap:18px; padding:14px 24px; text-align:center; }
-.career-banner strong { color:#e4bd7a; font-size:1.2rem; font-weight:775; }
-.career-banner span { font-size:1.2rem; color:#e3ebe5; font-weight:625; }
+.career-banner strong { color:#e4bd7a; font-size:1.2rem; font-weight:750; }
+.career-banner span { font-size:1.2rem; color:#e3ebe5; font-weight:600; }
 
 @media (max-width:600px) {
   .career-banner-inner { flex-direction:column; gap:2px; padding:12px 20px; }

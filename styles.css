@@ -255,3 +255,8 @@ body.lightbox-open { overflow:hidden; }
   .projects { gap:80px; }
   .earlier-research { margin-top:90px; }
 }
+
+/* Keep Earlier Research title on one line on desktop */
+@media (min-width: 901px) {
+  .earlier-research h2 { font-size:2.6rem; }
+}

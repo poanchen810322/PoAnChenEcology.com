@@ -268,8 +268,10 @@ body.lightbox-open { overflow:hidden; }
 .career-banner-separator { color:#b8c7bc; font-weight:400; }
 
 @media (max-width:600px) {
-  .career-banner-inner { flex-direction:column; gap:2px; padding:12px 20px; }
+  .career-banner-inner { flex-direction:column; gap:2px; padding:11px 16px; }
   .career-banner-separator { display:none; }
+  .career-banner strong { font-size:clamp(.88rem, 3.8vw, 1rem); }
+  .career-banner span { font-size:clamp(.80rem, 3.4vw, .92rem); }
 }
 
 /* Keep career banner visible with hero on desktop */

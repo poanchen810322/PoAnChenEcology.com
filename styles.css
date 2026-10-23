@@ -262,5 +262,5 @@ body.lightbox-open { overflow:hidden; }
 }
 
 .career-status { display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin:-4px 0 24px; line-height:1.35; }
-.career-date { color:var(--green-deep); font-size:1rem; font-weight:600; }
-.career-postdoc { color:var(--gold); font-size:1.16rem; font-weight:775; }
+.career-date { color:var(--green-deep); font-size:1.1rem; font-weight:650; }
+.career-postdoc { color:#9b651f; font-size:1.2rem; font-weight:775; }
